@@ -1,0 +1,47 @@
+├── chatbot
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── static
+│   │   ├── chatbot
+│   │   │   └── main.css
+│   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── courseStyle.css
+│   │   │   └── style.css
+│   │   ├── img
+│   │   └── js
+│   │       ├── dev-vue.js
+│   │       └── script.js
+│   ├── templates
+│   │   └── chatbot
+│   │       ├── about.html
+│   │       ├── base.html
+│   │       ├── courses.html
+│   │       └── home.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── db.sqlite3
+├── db.sqlite3-shm
+├── db.sqlite3-wal
+├── LMS
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── users
+    ├── admin.py
+    ├── apps.py
+    ├── forms.py
+    ├── __init__.py
+    ├── models.py
+    ├── signals.py
+    ├── templates
+    │   └── users
+    │       ├── login.html
+    │       ├── logout.html
+    │       ├── profile.html
+    │       └── register.html
+    ├── tests.py
+    └── views.py
+

@@ -1,0 +1,882 @@
+* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, .header, hgroup, keygen, meter, nav, output, progress, section, source, video
+{
+    display: block;
+}
+mark, rp, rt, ruby, summary, time
+{
+    display: inline;
+}
+
+/* Global properties ======================================================== */
+body
+{
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1em;
+    color: #454545;
+}
+html
+{
+    min-width: 940px;
+}
+html, body
+{
+    height: 100%;
+}
+
+
+
+/* Global Structure ============================================================= */
+.AuthenticationLinks
+{
+    margin: 0 auto;
+    width: 940px;
+    overflow: hidden;
+    font-size: .800em;
+    text-transform:uppercase;
+    padding-bottom: 5px;
+    padding-right:10px;
+    padding-top:5px;
+}
+
+.containerCourses
+{
+    margin: 0 auto;
+    width: 940px;
+    overflow: hidden;
+    font-size: .775em;
+    padding-bottom: 130px;
+}
+
+/* .header */
+.header
+{
+    background: url(images/header-bg.jpg) no-repeat center top;
+    min-width: 940px;
+}
+.header .containerCourses
+{
+    height: 150px;
+    position: relative;
+    padding: 0;
+}
+
+/* Content */
+.section #content
+{
+    float: left;
+    width: 691px;
+}
+
+/* Sidebar */
+.aside
+{
+    width: 219px;
+    float: left;
+    margin-right: 15px;
+    margin-left:10px;
+    padding: 5px 0 0 0;
+}
+
+/* Footer */
+.footer
+{
+    background: url(images/footer-bg.png) no-repeat center top;
+    margin-top: -75px;
+    min-width: 940px;
+}
+.footer .containerCourses
+{
+    height: 75px;
+    padding: 0;
+}
+
+
+
+
+/* Left & Right alignment */
+
+
+.alignright
+{
+    text-align: right;
+}
+.aligncenter
+{
+    text-align: center;
+}
+
+
+/*----- form defaults -----*/
+
+fieldset
+{
+    border: 0;
+}
+
+/*----- lists -----*/
+
+.categories, .coursemenu
+{
+    padding-bottom: 37px;
+}
+.categories li, .coursemenu li
+{
+    margin-bottom: 10px;
+}
+.categories li.current a, .coursemenu li.current a
+{
+    color: #ff7b01;
+}
+.categories li span
+{
+    display: block;
+    padding-left: 15px;
+    height: 1%;
+    background: url(images/arrow.gif) no-repeat left;
+}
+
+.courseOutcomes
+{
+    list-style-position:outside;
+    list-style-image:url(images/bullet.jpg);
+    list-style-type:square;
+    padding-left:10px;
+    margin-left:10px;
+}
+
+.coursemenu li span
+{
+    display: block;
+    padding-left: 15px;
+    height: 1%;
+    background: url(images/marker.gif) no-repeat left;
+}
+
+.categories li a, .coursemenu li a
+{
+    text-decoration: none;
+    color: #008cc4;
+}
+.categories li a:hover, .coursemenu li a:hover
+{
+    color: #ff7b01;
+}
+
+.articles
+{
+    margin-top: -18px;
+}
+.articles li
+{
+    width: 100%;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 1.429em;
+    padding-top: 18px;
+}
+.articles li img
+{
+    float: left;
+    margin-right: 22px;
+}
+
+.sitemap
+{
+    padding-bottom: 15px;
+}
+.sitemap li
+{
+    padding: 0 0 5px 16px;
+    background: url(images/marker1.gif) no-repeat left 5px;
+}
+.sitemap li ul
+{
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+.list
+{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.list li
+{
+    float: left;
+    width: 175px;
+    margin-right: 53px;
+}
+.list li.last
+{
+    margin: 0;
+}
+.list li span
+{
+    display: block;
+    text-align: center;
+}
+.list li h4
+{
+    padding-top: 20px;
+}
+.list li p
+{
+    margin: 0;
+}
+
+
+/*----- other -----*/
+.img-box
+{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    line-height: 1.429em;
+}
+.img-box img
+{
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.extra-wrap
+{
+    overflow: hidden;
+}
+
+p
+{
+    margin-bottom: 16px;
+    line-height: 1.429em;
+}
+.p0
+{
+    margin: 0;
+}
+
+.address
+{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.address address
+{
+    font-style: normal;
+    line-height: 1.429em;
+    float: left;
+    width: 248px;
+}
+.address address strong
+{
+    color: #008cc4;
+    width: 94px !important;
+    width: 91px;
+    float: left;
+}
+.address .extra-wrap
+{
+    float: left;
+    width: 385px;
+}
+.address p
+{
+    margin: 0;
+}
+
+#banner
+{
+    width: 670px;
+    height: 299px;
+    background: url(images/banner-bg.jpg) no-repeat left top;
+}
+#banner h2
+{
+    color: #fff;
+    font-size: 42px;
+    text-transform: none;
+    line-height: 1.2em;
+    padding: 75px 0 0 55px;
+    margin: 0;
+}
+#banner h2 span
+{
+    display: block;
+    margin-top: -12px;
+    color: #fff;
+}
+#banner h2 span span
+{
+    font-size: 30px;
+    margin-top: -8px;
+}
+
+
+
+/*----- txt, links, lines, titles -----*/
+a
+{
+    color: #008cc4;
+    outline: none;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #ff7b01;
+    text-decoration: none;
+}
+
+h1
+{
+    text-indent: -9999px;
+}
+h1 a
+{
+    width: 450px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    bottom:0;
+    background: url(images/logo.jpg) no-repeat left top;
+}
+h2
+{
+    font-size: 18px;
+    line-height: .600em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h2 span
+{
+    color: #8d8d8d;
+}
+
+h3
+{
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+h4
+{
+    font-size: 12px;
+    color: #008cc4;
+    margin-bottom: 5px;
+}
+
+h4 a
+{
+    color: #008cc4;
+    text-decoration: none;
+}
+h4 a:hover
+{
+    color: #ff7b01;
+}
+
+
+.txt1
+{
+    color: #008cc4;
+    font-style:normal;
+    font-weight: bold;
+}
+
+.link
+{
+    position: absolute;
+    right: 0;
+    top: 159px;
+}
+
+
+/*===== .header =====*/
+.header .nav-bg
+{
+    background: url(images/nav-bg.png) no-repeat center top;
+}
+.header .nav
+{
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+.header .nav ul li
+{
+    float: left;
+    font-size: 12px;
+    line-height: .800em;
+    text-transform: uppercase;
+    padding-right: 1px;
+    background: url(images/divider.gif) repeat-y right top;
+}
+.header .nav ul li.last
+{
+    background: none;
+    padding: 0;
+}
+.header .nav ul li a
+{
+    color: #454545;
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.header .nav ul li.current a, .header .nav ul li a:hover
+{
+    color: #008cc4;
+}
+.header .nav ul li a.m1
+{
+    width: 125px;
+}
+.header .nav ul li.current a.m1
+{
+    background-image: url(images/m1-act.jpg);
+}
+.header .nav ul li a.m2
+{
+    width: 125px;
+}
+.header .nav ul li.current a.m2
+{
+    background-image: url(images/m2-act.jpg);
+}
+.header .nav ul li a.m3
+{
+    width: 125px;
+}
+.header .nav ul li.current a.m3
+{
+    background-image: url(images/m3-act.jpg);
+}
+.header .nav ul li a.m4
+{
+    width: 125px;
+}
+.header .nav ul li.current a.m4
+{
+    background-image: url(images/m4-act.jpg);
+}
+.header .nav ul li.last
+{
+    background: none;
+    padding: 0;
+}
+.header .nav ul li a.m5
+{
+    width: 140px;
+}
+.header .nav ul li.current a.m5
+{
+    background-image: url(images/m5-act.jpg);
+}
+
+
+
+/*===== content =====*/
+#content .inside
+{
+    padding: 22px 20px 0 10px;
+}
+#content .inner_copy, #content .inner_copy a
+{
+    border: 0;
+    float: right;
+    background: #000;
+    color: #ff7b01;
+    width: 100%;
+    line-height: 10px;
+    font-size: 10px;
+    margin: -50% 0 0 0;
+    padding: 0;
+}
+
+/*===== footer =====*/
+.footer .fleft
+{
+    font-size: 20px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 32px 0 0 0;
+}
+.footer .fleft span
+{
+    display: block;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: #008cc4;
+    margin-top: -4px;
+}
+.footer .aligncenter
+{
+    padding-top: 35px;
+    line-height: 1.429em;
+    font-size:11px;
+    color: Gray;
+}
+
+
+/*----- forms -----*/
+.search-form .rowElem
+{
+    height: 25px;
+    position: absolute;
+    right: 160px;
+    top: 85px;
+}
+.search-form input
+{
+    width: 200px;
+    background: #fff;
+    padding: 4px 5px 4px 5px;
+    border: 1px solid #d0d0d0;
+    border-right: 0;
+    color: #454545;
+    line-height: 1.2em;
+    float: left;
+    height: 15px;
+    font-size: .975em;
+}
+.search-form a
+{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    background-color: #0087c1;
+    padding: 4px 11px 0 11px;
+    height: 20px;
+}
+.search-form a:hover
+{
+    background-color: #47b6e5;
+}
+
+
+/* Rating form */
+
+.rating-form a
+{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    background-color: #ff7b01;
+    padding: 4px 11px 0 11px;
+    height: 20px;
+    font-weight: bold;
+}
+.rating-form a:hover
+{
+    background-color: #47b6e5;
+}
+
+/*----------------------*/
+
+#newsletter-form
+{
+    padding-bottom: 45px;
+}
+#newsletter-form fieldset
+{
+    background: url(images/newsletter-bg.gif) no-repeat left top;
+    width: 219px;
+    height: 131px;
+    overflow: hidden;
+}
+#newsletter-form .rowElem
+{
+    padding: 13px 19px 0 17px;
+}
+#newsletter-form input
+{
+    border: 1px solid #0086b5;
+    background: #fff;
+    color: #8e8e8e;
+    font-size: .757em;
+    padding: 2px 5px 2px 5px;
+    width: 171px;
+    margin-bottom: 13px;
+}
+#newsletter-form h2
+{
+    color: #fff;
+    margin-bottom: 13px;
+}
+#newsletter-form a.fleft
+{
+    color: #fff;
+    position: relative;
+    top: 3px;
+}
+#newsletter-form a.fright
+{
+    display: block;
+    color: #fff;
+    border: 1px solid #26b6e8;
+    text-decoration: none;
+    background-color: #006caa;
+    padding: 2px 11px 3px 11px;
+}
+#newsletter-form a.fright:hover
+{
+    border-color: #fff;
+}
+
+/*----------------------*/
+
+#contacts-form
+{
+    clear: right;
+    width: 100%;
+    overflow: hidden;
+}
+#contacts-form fieldset
+{
+    border: none;
+    float: left;
+}
+#contacts-form .field
+{
+    clear: both;
+    height: 30px;
+}
+#contacts-form .field.extra
+{
+    height: 268px;
+}
+#contacts-form label
+{
+    float: left;
+    width: 123px;
+    font-weight: bold;
+    color: #008cc4;
+}
+#contacts-form input
+{
+    width: 277px;
+    padding: 2px 0 2px 3px;
+    border: 1px solid #d1d1d1;
+    color: #70635b;
+}
+#contacts-form textarea
+{
+    width: 503px;
+    height: 252px;
+    padding: 2px 0 2px 3px;
+    border: 1px solid #d1d1d1;
+    color: #70635b;
+    overflow: auto;
+}
+
+/*Tree View*/
+.parentnode
+{
+    /*font-family: Arial;
+    font-size: 9pt;*/
+    color: #008cc4;
+    font-weight: bold;
+}
+.leafnode
+{
+    /*font-family: Arial;
+    font-size: 9pt;*/
+    text-decoration: none;
+    color: #008cc4;
+    padding: 2px;
+}
+
+.selectednode
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.rootnode
+{
+    /*font-family: Arial;
+    font-family: Arial;
+    font-size: 9pt;*/
+    color: #ff7b01;
+    font-weight: bold;
+}
+.hovernode
+{
+    color: #ff7b01;
+}
+/*end tree view*/
+
+.tblCourses td
+{
+    padding: 5px;
+    background: #EEEEEE;
+}
+
+.tblCourses th
+{
+    padding: 5px;
+}
+
+
+.rightAlignedImage
+{
+    text-align: right;
+    float: right;
+}
+
+/*
+ * jQuery Nivo Slider v2.6
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * March 2010
+ */
+
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	height:250px;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/* lecture videos */
+.borderit:hover
+  {
+	 background-color:#0D67A6;
+  }
+
+.error
+{
+	color: #ff0000;
+}
+
+
+/* Course Overview */
+.tblInfo
+{
+    border: solid 1px #D4D4D4;
+}
+
+.gvHeader, .gvHeader td {
+	font-size: 12px;
+	font-weight: bold;
+    color: #ffffff !Important;
+    margin-bottom: 5px;
+    background-color:#0087c1 !Important;
+}
+
+.tblrow td
+{
+    background-color: #FAFAFA;
+}
+
+.tblrowAlt td
+{
+    background-color: #F3F3F3;
+}
+
+.awardImage
+{
+    height: 250px;
+    position: absolute;
+    right: -3px;
+    top: -4px;
+}
+
+
+.Downlaodform_Input
+{
+    width: 277px;
+    padding: 2px 0 2px 3px;
+    border: 1px solid #0087c1;
+    color: #70635b;
+}
+/* IE6 specific styles */
+.extra-wrap {zoom:1;}
+

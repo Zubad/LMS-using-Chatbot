@@ -1,0 +1,1795 @@
+{% extends "chatbot/base.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/courseStyle.css">
+
+</head>
+    <body>
+    <h1>Courses Page</h1>
+
+    <h2>Following are the courses available for Learners free of cost</h2>
+    <div class="containerCourses">
+                <!-- aside -->
+                <div class="aside">
+                    <div id="ctl00_divCategoriesMenu">
+                        <h2><cufon class="cufon cufon-canvas" alt="Find " style="width: 42px; height: 18px;"><canvas width="55" height="21" style="width: 55px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>Find </cufontext></cufon><span><cufon class="cufon cufon-canvas" alt="Courses" style="width: 73px; height: 18px;"><canvas width="81" height="21" style="width: 81px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>Courses</cufontext></cufon></span></h2>
+                        <ul class="categories" style="padding-left: 10px;"><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Accounting%2c+Banking+%26+Finance">Accounting, Banking &amp; Finance</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Bioinformatics">Bioinformatics</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Biotechnology">Biotechnology</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Computer+Science%2fInformation+Technology+">Computer Science/Information Technology </a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Economics">Economics</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=English">English</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Humanities+Distribution">Humanities Distribution</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Law">Law</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Management">Management</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Marketing">Marketing</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Mass+Communication">Mass Communication</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Mathematics">Mathematics</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Physics">Physics</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Probability+%26+Statistics">Probability &amp; Statistics</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Psychology">Psychology</a></span></li><li><span><a href="https://ocw.vu.edu.pk/Courses.aspx?cat=Sociology">Sociology</a></span></li></ul>
+                    </div>
+
+                    <br>
+                    <br>
+                    <h2><cufon class="cufon cufon-canvas" alt="Featured " style="width: 85px; height: 18px;"><canvas width="98" height="21" style="width: 98px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>Featured </cufontext></cufon><span><cufon class="cufon cufon-canvas" alt="Courses" style="width: 73px; height: 18px;"><canvas width="81" height="21" style="width: 81px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>Courses</cufontext></cufon></span></h2>
+                    <ul class="categories" style="padding-left: 10px;">
+                        <li><span><a href="https://ocw.vu.edu.pk/MostPopularCourses.aspx">Most Popular Courses</a></span></li>
+                        <li><span><a href="https://ocw.vu.edu.pk/MostVisitedCourses.aspx">Most Visited Courses</a></span></li>
+                    </ul>
+                </div>
+                <!-- content -->
+                <div class="section">
+                    <div id="content">
+                        <div style="float: left; padding-top: 5px;">
+                             &gt; Courses
+                        </div>
+
+                        <br>
+                        <div style="float: left; padding-top: 5px; width: 100%;">
+
+
+    <table border="0" cellpadding="5" cellspacing="0" width="70%" class="tblCourses">
+        <tbody><tr>
+            <td>
+                    <div style="float:left;">
+                        <h2><span id="ctl00_cphContent_lblCategory"><cufon class="cufon cufon-canvas" alt="All " style="width: 33px; height: 18px;"><canvas width="46" height="21" style="width: 46px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>All </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Courses" style="width: 73px; height: 18px;"><canvas width="81" height="21" style="width: 81px; height: 21px; top: -2px; left: -1px;"></canvas><cufontext>Courses</cufontext></cufon></span></h2>
+                    </div>
+                    <div style="float:right;">
+
+                    <a href="https://ocw.vu.edu.pk/CoursesRssFeeds.aspx" id="ctl00_cphContent_lnkRSS" target="_blank" title="Subscribe for RSS feed: All Courses"></a>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3><cufon class="cufon cufon-canvas" alt="Available " style="width: 80px; height: 16px;"><canvas width="91" height="19" style="width: 91px; height: 19px; top: -2px; left: -1px;"></canvas><cufontext>Available </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Courses" style="width: 66px; height: 16px;"><canvas width="73" height="19" style="width: 73px; height: 19px; top: -2px; left: -1px;"></canvas><cufontext>Courses</cufontext></cufon></h3>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">
+                <div>
+	<table class="tblInfo" cellspacing="1" cellpadding="5" rules="all" border="1" id="ctl00_cphContent_gvCourses" style="border-color:#D4D4D4;border-width:1px;border-style:Solid;width:100%;">
+		<tbody><tr class="gvHeader" style="white-space:nowrap;">
+			<th class="gvHeader" align="left" scope="col">Sr. #</th><th class="gvHeader" align="left" scope="col">Code</th><th class="gvHeader" align="left" scope="col">Title</th>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                1
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl02_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=ACC311">ACC311</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl02_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=ACC311">Fundamentals of Auditing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                2
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl03_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=ACC501">ACC501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl03_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=ACC501">Business Finance</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                3
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl04_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF731">BIF731</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl04_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF731">Advanced Bioinformatics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                4
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl05_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF732">BIF732</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl05_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF732">Advanced Computing Approaches</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                5
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl06_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF733">BIF733</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl06_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Bioinformatics&amp;course=BIF733">Bioinformatics I (Essentials of Genome Informatics)</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                6
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl07_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO201">BIO201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl07_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO201">Cell Biology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                7
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl08_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO202">BIO202</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl08_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO202">Biochemistry-I</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                8
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl09_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO301">BIO301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl09_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO301">Essentials of Genetics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                9
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl10_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO302">BIO302</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl10_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO302">Molecular Biology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                10
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl11_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO732">BIO732</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl11_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BIO732">Gene Manipulation and Genetic Engineering</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                11
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl12_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=BNK601">BNK601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl12_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=BNK601">Banking Laws &amp; Practices</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                12
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl13_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=BNK603">BNK603</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl13_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=BNK603">Consumer Banking</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                13
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl14_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BT731">BT731</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl14_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BT731">Modern Biotechnology: Principles &amp; Applications</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                14
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl15_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BT733">BT733</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl15_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Biotechnology&amp;course=BT733">Bioethics, Biosecurity and Biosafety</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                15
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl16_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS101">CS101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl16_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS101">Introduction to Computing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                16
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl17_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS201">CS201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl17_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS201">Introduction to Programming</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                17
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl18_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS206">CS206</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl18_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS206">Introduction to Network Design &amp; Analysis</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                18
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl19_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS301">CS301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl19_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS301">Data Structures</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                19
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl20_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS302">CS302</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl20_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS302">Digital Logic Design</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                20
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl21_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS304">CS304</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl21_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS304">Object Oriented Programming</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                21
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl22_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS311">CS311</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl22_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS311">Introduction to Web Services Development</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                22
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl23_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS312">CS312</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl23_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS312">Database Modeling and Design</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                23
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl24_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS401">CS401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl24_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS401">Computer Architecture and Assembly Language Programming</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                24
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl25_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS402">CS402</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl25_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS402">Theory of Automata</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                25
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl26_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS403">CS403</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl26_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS403">Database Management Systems</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                26
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl27_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS408">CS408</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl27_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS408">Human Computer Interaction</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                27
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl28_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS410">CS410</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl28_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS410">Visual Programming</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                28
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl29_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS411">CS411</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl29_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS411">Visual Programming</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                29
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl30_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS501">CS501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl30_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS501">Advance Computer Architecture</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                30
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl31_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS502">CS502</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl31_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS502">Fundamentals of Algorithms</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                31
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl32_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS504">CS504</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl32_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS504">Software Engineering - I</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                32
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl33_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS506">CS506</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl33_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS506">Web Design and Development</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                33
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl34_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS507">CS507</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl34_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS507">Information Systems</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                34
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl35_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS508">CS508</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl35_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS508">Modern Programming Languages</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                35
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl36_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS601">CS601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl36_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS601">Data Communication</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                36
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl37_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS602">CS602</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl37_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS602">Computer Graphics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                37
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl38_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS604">CS604</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl38_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS604">Operating Systems</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                38
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl39_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS605">CS605</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl39_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS605">Software EngineeringII</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                39
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl40_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS606">CS606</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl40_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS606">Compiler Construction</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                40
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl41_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS607">CS607</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl41_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS607">Artificial Intelligence</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                41
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl42_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS609">CS609</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl42_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS609">System Programming</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                42
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl43_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS610">CS610</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl43_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS610">Computer Network</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                43
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl44_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS614">CS614</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl44_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS614">Data Warehousing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                44
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl45_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS615">CS615</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl45_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS615">Software Project Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                45
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl46_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS701">CS701</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl46_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS701">Theory of Computation</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                46
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl47_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS702">CS702</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl47_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS702">Advanced Algorithms Analysis and Design</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                47
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl48_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS703">CS703</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl48_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS703">Advanced Operating Systems</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                48
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl49_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS704">CS704</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl49_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS704">Advanced Computer Architecture-II</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                49
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl50_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS706">CS706</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl50_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS706">Software Quality Assurance</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                50
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl51_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS707">CS707</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl51_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS707">Network Security</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                51
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl52_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS708">CS708</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl52_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS708">Software Requirement Engineering</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                52
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl53_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS709">CS709</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl53_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS709">Formal Methods for Software Engineering</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                53
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl54_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS710">CS710</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl54_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS710">Mobile and Pervasive Computing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                54
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl55_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS711">CS711</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl55_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS711">Software Design</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                55
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl56_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS712">CS712</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl56_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS712">Distributed DBMS</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                56
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl57_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS713">CS713</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl57_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS713">Object Oriented DBMS</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                57
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl58_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS716">CS716</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl58_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS716">Advanced Computer Networks</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                58
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl59_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS718">CS718</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl59_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS718">Wireless Networks</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                59
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl60_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS721">CS721</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl60_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS721">Network Performance Evaluation</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                60
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl61_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS723">CS723</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl61_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS723">Probability and Stochastic Processes</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                61
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl62_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS724">CS724</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl62_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS724">Software Process Improvement</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                62
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl63_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS726">CS726</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl63_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=CS726">Information Retrieval Techniques</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                63
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl64_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO401">ECO401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl64_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO401">Economics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                64
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl65_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO402">ECO402</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl65_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO402">Microeconomics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                65
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl66_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO403">ECO403</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl66_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO403">Macroeconomics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                66
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl67_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO404">ECO404</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl67_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO404">Managerial Economics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                67
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl68_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO501">ECO501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl68_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO501">Development Economics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                68
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl69_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO601">ECO601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl69_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Economics&amp;course=ECO601">Business Econometrics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                69
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl70_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU101">EDU101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl70_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU101">Foundations of Education</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                70
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl71_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU201">EDU201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl71_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU201">Learning Theories</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                71
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl72_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU301">EDU301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl72_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU301">General Methods of Teaching</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                72
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl73_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU303">EDU303</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl73_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU303">Child Development</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                73
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl74_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU304">EDU304</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl74_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU304">Introduction to Guidance and Counseling</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                74
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl75_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU305">EDU305</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl75_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU305">Classroom Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                75
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl76_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU402">EDU402</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl76_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU402">Curriculum Development</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                76
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl77_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU405">EDU405</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl77_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU405">Classroom Assessment</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                77
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl78_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU406">EDU406</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl78_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU406">Critical Thinking and reflective Practice</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                78
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl79_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU410">EDU410</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl79_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU410">Teaching of Literacy Skills</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                79
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl80_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU411">EDU411</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl80_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU411">Teaching of Urdu</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                80
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl81_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU501">EDU501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl81_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU501">School, Community and Teacher</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                81
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl82_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU505">EDU505</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl82_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU505">Education Development in Pakistan</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                82
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl83_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU512">EDU512</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl83_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU512">Teaching of Islamic Studies</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                83
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl84_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU515">EDU515</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl84_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU515">Teaching of Geography</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                84
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl85_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU516">EDU516</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl85_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU516">Teaching of English</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                85
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl86_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU601">EDU601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl86_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU601">Philosophy of Education</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                86
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl87_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU602">EDU602</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl87_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU602">Educational Leadership and Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                87
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl88_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU603">EDU603</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl88_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU603">Educational Governance Policy and Practice</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                88
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl89_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU654">EDU654</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl89_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=EDU654">Addressing problems of learning through technology and pedagogy</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                89
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl90_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG001">ENG001</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl90_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG001">Elementary English</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                90
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl91_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG101">ENG101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl91_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG101">English Comprehension</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                91
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl92_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG201">ENG201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl92_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG201">Business and Technical English Writing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                92
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl93_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG301">ENG301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl93_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=English&amp;course=ENG301">Business Communication</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                93
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl94_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=ETH202">ETH202</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl94_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=ETH202">Ethics (for Non-Muslims)</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                94
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl95_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN611">FIN611</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl95_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN611">Advanced Financial Accounting</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                95
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl96_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN621">FIN621</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl96_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN621">Financial Statement Analysis</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                96
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl97_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN622">FIN622</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl97_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN622">Corporate Finance</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                97
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl98_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN623">FIN623</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl98_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN623">Taxation Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                98
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl99_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN625">FIN625</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl99_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN625">Credit &amp; Risk Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                99
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl100_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN630">FIN630</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl100_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=FIN630">Investment Analysis &amp; Portfolio Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                100
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl101_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=GSC101">GSC101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl101_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=GSC101">General Science</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                101
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl102_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=GSC201">GSC201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl102_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=GSC201">Teaching of General Science</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                102
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl103_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM617">HRM617</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl103_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM617">Training and Development</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                103
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl104_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM624">HRM624</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl104_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM624">Conflict Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                104
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl105_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM627">HRM627</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl105_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM627">Human Resource Development</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                105
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl106_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM713">HRM713</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl106_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=HRM713">Performance Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                106
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl107_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=ISL201">ISL201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl107_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=ISL201">Islamic Studies</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                107
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl108_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=IT430">IT430</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl108_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Computer+Science%2fInformation+Technology+&amp;course=IT430">E-Commerce</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                108
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl109_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD401">MCD401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl109_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD401">Camera basics, principles and practices</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                109
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl110_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD402">MCD402</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl110_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD402">Lighting for TV Production</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                110
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl111_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD403">MCD403</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl111_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD403">Music Production</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                111
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl112_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD404">MCD404</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl112_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD404">Audio-Visual Editing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                112
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl113_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD501">MCD501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl113_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD501">TV Direction</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                113
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl114_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD502">MCD502</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl114_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD502">Script Writing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                114
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl115_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD503">MCD503</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl115_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD503">TV News and Current Affairs</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                115
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl116_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD504">MCD504</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl116_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCD504">Acting and Performance</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                116
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl117_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM101">MCM101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl117_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM101">Introduction to Mass Communication</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                117
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl118_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM301">MCM301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl118_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM301">Communication skills</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                118
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl119_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM304">MCM304</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl119_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM304">Mass Media in Pakistan</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                119
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl120_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM310">MCM310</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl120_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM310">Journalistic Writing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                120
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl121_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM311">MCM311</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl121_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM311">Reporting and Sub-Editing</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                121
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl122_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM401">MCM401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl122_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM401">Fundamentals of Public Relations</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                122
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl123_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM404">MCM404</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl123_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM404">Globalization of Media</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                123
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl124_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM411">MCM411</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl124_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM411">Introduction to Broadcasting</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                124
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl125_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM501">MCM501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl125_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM501">Advertising for Print and Electronic Media</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                125
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl126_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM511">MCM511</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl126_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM511">Theories of Communication</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                126
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl127_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM514">MCM514</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl127_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM514">Feature &amp; Column Writing</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                127
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl128_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM515">MCM515</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl128_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM515">Radio News Reporting &amp; Production</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                128
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl129_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM516">MCM516</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl129_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM516">TV News Reporting &amp; Production</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                129
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl130_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM604">MCM604</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl130_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM604">International Communication</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                130
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl131_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM610">MCM610</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl131_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mass+Communication&amp;course=MCM610">Mass Communication Law &amp; Ethics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                131
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl132_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT611">MGMT611</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl132_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT611">Human Relations (alt. code=HRM611)</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                132
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl133_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT614">MGMT614</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl133_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT614">Supply Chain Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                133
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl134_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT622">MGMT622</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl134_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT622">Management Skills</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                134
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl135_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT623">MGMT623</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl135_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT623">Leadership &amp; Team Management - MGMT623 (alt. code=HRM623)</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                135
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl136_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT625">MGMT625</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl136_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT625">Change Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                136
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl137_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT627">MGMT627</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl137_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT627">Project Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                137
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl138_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT628">MGMT628</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl138_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT628">Organizational Development (alt. code=HRM628)</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                138
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl139_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT629">MGMT629</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl139_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT629">Crisis Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                139
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl140_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT630">MGMT630</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl140_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT630">Knowledge Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                140
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl141_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT727">MGMT727</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl141_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGMT727">Project Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                141
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl142_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT101">MGT101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl142_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT101">Financial Accounting</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                142
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl143_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT111">MGT111</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl143_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT111">Introduction to Public Administration</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                143
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl144_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT201">MGT201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl144_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT201">Financial Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                144
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl145_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT211">MGT211</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl145_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT211">Introduction To Business</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                145
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl146_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MGT301">MGT301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl146_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MGT301">Principles of Marketing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                146
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl147_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT401">MGT401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl147_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT401">Financial Accounting II</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                147
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl148_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT402">MGT402</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl148_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT402">Cost &amp; Management Accounting</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                148
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl149_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT404">MGT404</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl149_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT404">Managerial Accounting</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                149
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl150_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT411">MGT411</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl150_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT411">Money &amp; Banking</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                150
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl151_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT501">MGT501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl151_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT501">Human Resource Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                151
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl152_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT502">MGT502</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl152_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT502">Organizational Behaviour</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                152
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl153_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT503">MGT503</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl153_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT503">Principles of Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                153
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl154_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT504">MGT504</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl154_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT504">Organization Theory &amp; Design</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                154
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl155_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT510">MGT510</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl155_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT510">Total Quality Management (alt. code=MGMT510)</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                155
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl156_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT520">MGT520</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl156_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT520">International Business</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                156
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl157_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT601">MGT601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl157_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT601">SME Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                157
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl158_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT602">MGT602</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl158_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT602">Entrepreneurship</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                158
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl159_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT603">MGT603</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl159_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT603">Strategic Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                159
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl160_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT604">MGT604</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl160_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT604">Management of Financial Institutions (alt. code=BNK604)</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                160
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl161_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT610">MGT610</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl161_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT610">Business Ethics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                161
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl162_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=MGT611">MGT611</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl162_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=MGT611">Business &amp; Labor Law</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                162
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl163_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=MGT612">MGT612</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl163_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=MGT612">Corporate Law</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                163
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl164_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT613">MGT613</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl164_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT613">Production / Operations Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                164
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl165_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT621">MGT621</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl165_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=MGT621">Administrative Law and Accountability</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                165
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl166_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT705">MGT705</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl166_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Accounting%2c+Banking+%26+Finance&amp;course=MGT705">Advanced Cost and Management Accounting</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                166
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl167_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT501">MKT501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl167_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT501">Marketing Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                167
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl168_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT530">MKT530</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl168_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT530">Consumer Behaviour</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                168
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl169_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT603">MKT603</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl169_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT603">Strategic Marketing Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                169
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl170_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT610">MKT610</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl170_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT610">Customer Relationship Management</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                170
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl171_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT611">MKT611</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl171_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT611">Marketing Research</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                171
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl172_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT621">MKT621</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl172_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT621">Advertising &amp; Promotion</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                172
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl173_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT624">MKT624</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl173_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT624">Brand Management</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                173
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl174_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT625">MKT625</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl174_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT625">Services Marketing</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                174
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl175_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT630">MKT630</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl175_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Marketing&amp;course=MKT630">International Marketing</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                175
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl176_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH001">MTH001</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl176_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH001">Elementary Mathematics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                176
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl177_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH100">MTH100</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl177_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH100">General Mathematics</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                177
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl178_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH101">MTH101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl178_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH101">Calculus And Analytical Geometry</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                178
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl179_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH201">MTH201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl179_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH201">Multivariable Calculus</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                179
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl180_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH202">MTH202</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl180_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH202">Discrete Mathematics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                180
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl181_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH301">MTH301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl181_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH301">Calculus II</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                181
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl182_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH302">MTH302</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl182_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH302">Business Mathematics &amp; Statistics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                182
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl183_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH303">MTH303</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl183_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH303">Mathematical Methods</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                183
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl184_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH401">MTH401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl184_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH401">Differential Equations</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                184
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl185_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH501">MTH501</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl185_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH501">Linear Algebra</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                185
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl186_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH601">MTH601</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl186_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH601">Operations Research</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                186
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl187_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH603">MTH603</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl187_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Mathematics&amp;course=MTH603">Numerical Analysis</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                187
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl188_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=PAK301">PAK301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl188_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=PAK301">Pakistan Studies</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                188
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl189_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=PAK302">PAK302</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl189_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Humanities+Distribution&amp;course=PAK302">Pakistan Studies</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                189
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl190_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Physics&amp;course=PHY101">PHY101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl190_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Physics&amp;course=PHY101">Physics</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                190
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl191_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Physics&amp;course=PHY301">PHY301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl191_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Physics&amp;course=PHY301">Circuit Theory</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                191
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl192_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=PSC201">PSC201</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl192_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Management&amp;course=PSC201">International Relations</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                192
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl193_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=PSC401">PSC401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl193_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Law&amp;course=PSC401">Public International Law</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                193
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl194_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY101">PSY101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl194_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY101">Introduction to Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                194
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl195_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY401">PSY401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl195_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY401">Clinical Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                195
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl196_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY403">PSY403</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl196_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY403">Social Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                196
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl197_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY404">PSY404</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl197_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY404">Abnormal Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                197
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl198_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY405">PSY405</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl198_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY405">Personality Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                198
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl199_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY406">PSY406</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl199_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY406">Educational Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                199
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl200_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY407">PSY407</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl200_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY407">Sport Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                200
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl201_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY408">PSY408</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl201_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY408">Health Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                201
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl202_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY409">PSY409</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl202_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY409">Positive Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                202
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl203_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY502">PSY502</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl203_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY502">History &amp; Systems of Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                203
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl204_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY504">PSY504</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl204_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY504">Cognitive Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                204
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl205_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY510">PSY510</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl205_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY510">Organizational Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                205
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl206_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY511">PSY511</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl206_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY511">Environmental Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                206
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl207_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY512">PSY512</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl207_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY512">Gender Issues in Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                207
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl208_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY513">PSY513</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl208_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY513">Forensic Psychology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                208
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl209_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY514">PSY514</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl209_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY514">Consumer Psychology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                209
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl210_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY610">PSY610</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl210_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY610">Neurological Bases of Behavior</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                210
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl211_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY631">PSY631</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl211_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY631">Psychological Testing &amp; Measurements</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                211
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl212_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY632">PSY632</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl212_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Psychology&amp;course=PSY632">Theory &amp; Practice of Counseling</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                212
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl213_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Sociology&amp;course=SOC101">SOC101</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl213_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Sociology&amp;course=SOC101">Introduction to Sociology</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                213
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl214_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Sociology&amp;course=SOC401">SOC401</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl214_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Sociology&amp;course=SOC401">Cultural Anthropology</a>
+                            </td>
+		</tr><tr class="tblrowAlt">
+			<td style="width:50px;">
+                                214
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl215_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Probability+%26+Statistics&amp;course=STA301">STA301</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl215_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Probability+%26+Statistics&amp;course=STA301">Statistics and Probability</a>
+                            </td>
+		</tr><tr class="tblrow">
+			<td style="width:50px;">
+                                215
+                            </td><td style="width:100px;">
+                                <a id="ctl00_cphContent_gvCourses_ctl216_hlnkCourseCode" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Probability+%26+Statistics&amp;course=STA630">STA630</a>
+                            </td><td>
+                                <a id="ctl00_cphContent_gvCourses_ctl216_hlnkCourseTitle" href="https://ocw.vu.edu.pk/CourseDetails.aspx?cat=Probability+%26+Statistics&amp;course=STA630">Research Methods</a>
+                            </td>
+		</tr>
+	</tbody></table>
+</div>
+            </td>
+        </tr>
+    </tbody></table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+{% endblock content %}
